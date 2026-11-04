@@ -1,0 +1,22 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+def1=pd.read_csv(r"C:\Users\GAMER\Downloads\iris.csv")
+print("Column names:")
+print(def1.columns)
+print("Top rows of the dataset:")
+print(def1.head())
+print("\nSummary Statistics:")
+print(def1.describe())
+print("\nShape of the dataFrame:")
+print(def1.shape)
+print("\nSample rows:")
+print(def1.sample(5))
+mydata=def1[["sepal_length"]]
+print("sepal_length")
+print(mydata)
+print(mydata.iloc[0:5])
+plt.plot(def1["sepal_width"],"r--")   
+plt.xlabel("Sample numbers:")
+plt.ylabel("Sepal_width:")
+plt.title("Sepal_width of the dataset")         
+plt.show()

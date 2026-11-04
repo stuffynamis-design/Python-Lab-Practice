@@ -1,0 +1,20 @@
+n=int(input("Enter number of elemnets:"))
+L=[]
+print("The number of elements:")
+for i in range(n):
+    value=int(input())
+    L.append(value)
+print("orginal list:",L)
+
+L.append(100)
+print("After append",L)
+L.insert(4,55)
+print("After inserted:",L)
+L.remove(100)
+print("After removal:",L)
+print("Maximum value",max(L))
+print("Minimum value",min(L))
+print("Sum of list",sum(L))
+print("length of list",len(L))
+L.sort()
+print("Sorted list:",L)

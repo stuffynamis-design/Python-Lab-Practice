@@ -1,0 +1,6 @@
+X1=int(input("Enter the first number x1:"))
+X2=int(input("Enter the first number x2:"))
+Y1=int(input("Enter the second number y1:"))
+Y2=int(input("Enter the second number y2:"))
+distance=(((X2-X1)**2)+((Y2-Y1)**2))**(1/2)
+print("The distance between two points:",distance)
